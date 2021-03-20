@@ -52,12 +52,12 @@ console.log(p1.nomecompleto);
 
 //Construtor functions (2)
 //melhor ela já retorna o objeto 
-function Namoro(homem, mulher){
+function Casal(homem, mulher){
   this.homem = homem;
   this.mulher = mulher;
 }
 
-const n1 = new Namoro('thiago','adriana');
+const n1 = new Casal('thiago','adriana');
 //aqui pode mudar o valor da memoria diferente de mudar uma constante ex: p1 = "beatriz";
 n1.mulher = 'beatriz';
 //assim não pode
@@ -68,7 +68,7 @@ Object.freeze(n1);
 
 n1.mulher = "Aline"; // não vai aletrar
 
-const n2 = new Namoro('marcelo','bianca');
+const n2 = new Casal('marcelo','bianca');
 
 console.log(n1);
 console.log(n2);
